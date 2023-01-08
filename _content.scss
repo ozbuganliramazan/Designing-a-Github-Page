@@ -1,0 +1,118 @@
+.Main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24px;
+  display: flex;
+
+  &-about {
+    margin-top: 20px;
+    img {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+    }
+    &-title {
+      margin-top: 20px;
+      title:hover{
+        background-color: #fff;
+        
+      }
+      h3 {
+        padding-bottom: 10px;
+      }
+      h4 {
+        padding-bottom: 30px;
+      }
+      button {
+        width: 100%;
+        height: 36px;
+        border: 1px solid rgba(27, 31, 35, 0.2);
+        background: none;
+        background-color: #eff3f6;
+        background-image: linear-gradient(-180deg, #949699, #7a7c7d 90%);
+        border-radius: 5px;
+        color: black;
+      }
+    }
+    &-dsc {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      a {
+        color: rgb(116, 111, 111);
+      }
+    }
+  }
+
+  &-projects {
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 10px;
+    &-links {
+      display: flex;
+      justify-content: space-between;
+      a:hover{
+        background-color: rgb(212, 219, 13);
+        color: blue;
+      }
+    }
+    .section {
+      display: flex;
+      margin-top: 30px;
+      justify-content: space-between;
+      a ,p{
+        font-size: 12px;
+        color: #586069;
+      }
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-bar{
+       padding: 10px; 
+       border: 1px solid #ddd;
+       margin-top: 20px;
+       margin-right: 10px;
+       width: 450px;
+       height: 100px;
+       position: relative;
+       .up{
+        display: flex;
+        .right{
+            svg{
+               position: absolute;
+               right: 10px;
+            }
+        }
+       }
+       .down{
+        margin-top: 40px;
+        margin-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+        display: flex;
+        gap: 5px;
+        span{
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
+          display: inline-block;
+          gap: 10px;
+        }
+        .sa{
+            background-color: rgb(158, 15, 190);
+        }
+        .an{
+            background-color: red;
+        }
+        .de{
+            background-color: yellow;
+        }
+      
+       }
+      
+    }
+  }
+}
